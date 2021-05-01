@@ -5,7 +5,7 @@ plugins {
 }
 
 allprojects {
-    group = 'kuckjwi.com.example'
+    group = 'kuckjwi.com.example.spring'
     version = '0.0.1-SNAPSHOT'
 }
 
