@@ -14,6 +14,7 @@ import java.util.stream.IntStream;
 public class AsyncJobService {
   @Async
   public CompletableFuture<Integer> completableFuture() {
+    log.info("{}", Thread.currentThread().getName());
     return CompletableFuture.completedFuture(IntStream.range(1, 10000).sum())
             // same thread
             .thenApply(sum -> {
