@@ -1,6 +1,6 @@
-package kuckjwo.com.example.spring.async.rest;
+package kuckjwi.com.example.spring.async.rest;
 
-import kuckjwo.com.example.spring.async.service.AsyncJobService;
+import kuckjwi.com.example.spring.async.service.AsyncJobService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

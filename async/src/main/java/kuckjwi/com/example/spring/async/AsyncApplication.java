@@ -1,4 +1,4 @@
-package kuckjwo.com.example.spring.async;
+package kuckjwi.com.example.spring.async;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

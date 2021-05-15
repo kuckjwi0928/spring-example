@@ -1,4 +1,4 @@
-package kuckjwo.com.example.spring.async.infrastructure.config;
+package kuckjwi.com.example.spring.async.infrastructure.config;
 
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
 import org.springframework.context.annotation.Bean;

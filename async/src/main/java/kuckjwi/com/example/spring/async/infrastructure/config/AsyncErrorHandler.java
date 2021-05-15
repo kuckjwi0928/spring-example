@@ -1,4 +1,4 @@
-package kuckjwo.com.example.spring.async.infrastructure.config;
+package kuckjwi.com.example.spring.async.infrastructure.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
