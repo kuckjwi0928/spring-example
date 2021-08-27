@@ -19,6 +19,6 @@ type Query {
 
 # Root
 type Mutation {
-    add(request: ProductRequest!): ID!
-    remove(id: ID!): Boolean
+    addProduct(request: ProductRequest!): ID!
+    removeProduct(id: ID!): Boolean
 }

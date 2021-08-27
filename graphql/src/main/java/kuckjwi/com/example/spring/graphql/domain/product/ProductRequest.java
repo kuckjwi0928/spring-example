@@ -1,5 +1,6 @@
 package kuckjwi.com.example.spring.graphql.domain.product;
 
+import kuckjwi.com.example.spring.graphql.infrastructure.converter.EntityConverter;
 import lombok.Builder;
 import lombok.Value;
 

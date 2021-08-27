@@ -11,11 +11,11 @@ public class ProductMutationResolver implements GraphQLMutationResolver {
 
   private final ProductRepository repository;
 
-  public long add(ProductRequest request) {
+  public long addProduct(ProductRequest request) {
     return repository.save(request.toEntity()).getId();
   }
 
-  public void remove(long id) {
+  public void removeProduct(long id) {
     repository.delete(queryResolver.product(id));
   }
 }
