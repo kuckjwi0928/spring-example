@@ -1,0 +1,24 @@
+# Define schema
+type Product {
+    id: ID!
+    name: String!
+    quantity: Int!
+    price: Int!
+}
+
+input ProductRequest {
+    name: String!
+    quantity: Int!
+    price: Int!
+}
+
+# Root
+type Query {
+    product(id: ID!): Product
+}
+
+# Root
+type Mutation {
+    add(request: ProductRequest!): ID!
+    remove(id: ID!): Boolean
+}

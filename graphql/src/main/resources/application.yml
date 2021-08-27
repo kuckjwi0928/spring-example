@@ -1,0 +1,16 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:kuckjwi
+    username: kcukjwi
+    password: kuckjwi
+  jpa:
+    show-sql: true
+    open-in-view: false
+
+graphql:
+  servlet:
+    mapping: /graphql
