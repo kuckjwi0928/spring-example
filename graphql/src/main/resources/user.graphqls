@@ -10,12 +10,10 @@ input UserRequest {
     age: Int!
 }
 
-# Root
 extend type Query {
     user(id: ID!): User
 }
 
-# Root
 extend type Mutation {
     addUser(request: UserRequest!): ID!
     removeUser(id: ID!): Boolean

@@ -15,10 +15,11 @@ input ProductRequest {
 # Root
 type Query {
     product(id: ID!): Product
+    products(page: Int!, limit: Int!): [Product]
 }
 
 # Root
 type Mutation {
-    addProduct(request: ProductRequest!): ID!
+    addProduct(request: ProductRequest!): Product!
     removeProduct(id: ID!): Boolean
 }

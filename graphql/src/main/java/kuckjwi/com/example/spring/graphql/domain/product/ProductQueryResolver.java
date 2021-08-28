@@ -1,17 +1,11 @@
 package kuckjwi.com.example.spring.graphql.domain.product;
 
 import graphql.kickstart.tools.GraphQLQueryResolver;
-import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
-import org.springframework.web.server.ResponseStatusException;
 
-@Component
-@RequiredArgsConstructor
-public class ProductQueryResolver implements GraphQLQueryResolver {
-  private final ProductRepository repository;
+import java.util.List;
 
-  public ProductEntity product(long id) {
-    return repository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-  }
+public interface ProductQueryResolver extends GraphQLQueryResolver {
+  ProductEntity product(long id);
+
+  List<ProductEntity> products(int page, int limit);
 }
